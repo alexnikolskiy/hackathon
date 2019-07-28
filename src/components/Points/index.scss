@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.points {
+  display: flex;
+  align-items: center;
+}
+
+.points__value {
+  font-weight: bold;
+  margin-left: 10px;
+  color: $secondary;
+}

@@ -1,0 +1,21 @@
+@import '../../mixins';
+
+.question {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.question__item {
+  @include mobile {
+    &:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid #dbdbdb;
+    }
+  }
+}
+
+.question__footer {
+  @include mobile {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../variables';
+@import "../../mixins";
+
+.header {
+  width: 70%;
+  background-color: $primary;
+  height: 35px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    //width: 100%;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 0;
+    border-top: 35px solid $primary !important;
+    position: absolute;
+
+    @include mobile {
+      //display: none;
+    }
+  }
+
+  &::before {
+    border-left: 25px solid transparent;
+    left: -25px;
+    top: 0;
+  }
+
+  &::after {
+    border-right: 25px solid transparent;
+    right: -25px;
+    top: 0;
+  }
+
+
+}
