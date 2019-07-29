@@ -1,0 +1,30 @@
+.answer {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 3rem;
+  //transition: 1s;
+  //transition-property: bottom, top;
+  transition: bottom 0.5s ease-out, top 0.5s ease 0.5s;
+}
+
+.answer-ok {
+  width: 173px;
+  height: 190px;
+}
+
+.answer-fail {
+  width: 232px;
+  height: 191px;
+}
+
+.answer_show {
+  top: auto;
+  bottom: 0;
+}
+
+.answer_hide {
+  top: 100%;
+  bottom: auto;
+}

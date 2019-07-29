@@ -5,6 +5,7 @@ import Card from 'react-bulma-components/lib/components/card';
 import Content from 'react-bulma-components/lib/components/content';
 import Button from 'react-bulma-components/lib/components/button';
 import Image from 'react-bulma-components/lib/components/image';
+import Answer from '../Answer';
 import Loader from '../Loader';
 import './index.scss';
 
@@ -64,10 +65,13 @@ class TestCard extends Component {
         <Button onClick={this.handleBackClick} color="link" text>
           Назад
         </Button>
-        (question.isRight === null ? false : ( question.isRight ?
-        <Image className="answer answer-ok" src={'./img/choice-ok.png'} /> :{' '}
-        <Image className="answer answer-fail" src={'./img/choice-fail.png'} />
-        ))
+        {question.isRight === undefined || question.isRight === null ? (
+          false
+        ) : question.isRight ? (
+          <Answer type="ok" />
+        ) : (
+          <Answer type="fail" />
+        )}
       </React.Fragment>
     );
   }

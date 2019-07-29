@@ -8,15 +8,14 @@ import CategoryList from '../CategoryList';
 import Header from '../Header';
 import Loader from '../Loader/index';
 import TestCard from '../TestCard/index';
+import Welcome from "../Welcome";
 
 class Home extends Component {
   componentDidMount() {
-    const { isLogged, getUserInfo, getCategories } = this.props;
+    const { getUserInfo } = this.props;
 
     getUserInfo();
-    // if (isLogged) {
-    //   getCategories();
-    // }
+
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
@@ -33,7 +32,6 @@ class Home extends Component {
       isLoadingUser,
       isLoadingCategory,
       categories,
-      isLoadingQuestion,
       activeCategory
     } = this.props;
 
@@ -45,10 +43,11 @@ class Home extends Component {
 
     return (
       <React.Fragment>
+        <Welcome />
         <Hero.Head>
           <Header />
         </Hero.Head>
-        <Hero.Body>
+        <Hero.Body style={{overflow: 'hidden'}}>
           <Container className="has-text-centered">
             {isLoadingUser || isLoadingCategory ? (
               <Loader />

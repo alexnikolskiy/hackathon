@@ -15,11 +15,11 @@ export default (question = {}, action) => {
       return Object.assign({}, question, response.data, { isLoading: false });
     case GET_QUESTION + FAIL:
       return Object.assign({}, question, { isLoading: false });
-    case SET_CATEGORY:
-      return Object.assign({}, question, { isLoading: true });
-    case SET_ANSWER:
+    case SET_CATEGORY + SUCCESS:
+      return Object.assign({}, question, { isLoading: true, isRight: null });
+    case SET_ANSWER + SUCCESS:
       const isRight = Number(response.data.points) > 0;
-      return Object.assign({}, question, { isLoading: true, isRight });
+      return Object.assign({}, question, { isLoading: false, isRight });
     default:
       return question;
   }
