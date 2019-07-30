@@ -2,6 +2,8 @@
 
 Computer security training application with gamification elements. Made on the [hackathon](https://xn--b1aaqfxbbhefb3bya5f.xn--p1ai/). ([Demo](https://nikolskiy.dev/hackathon/))
 
+Backend is made by [Ivan Avseianko](https://gitlab.com/avseianko/cybersecurity).
+
 ![pic](https://res.cloudinary.com/dtv6nxle4/image/upload/v1564497493/1.jpg)
 
 ![pic](https://res.cloudinary.com/dtv6nxle4/image/upload/v1564497493/2.jpg)
