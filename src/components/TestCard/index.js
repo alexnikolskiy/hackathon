@@ -65,13 +65,13 @@ class TestCard extends Component {
         <Button onClick={this.handleBackClick} color="link" text>
           Назад
         </Button>
-        {question.isRight === undefined || question.isRight === null ? (
-          false
-        ) : question.isRight ? (
-          <Answer type="ok" />
-        ) : (
-          <Answer type="fail" />
-        )}
+        {/*{question.isRight === undefined || question.isRight === null ? (*/}
+        {/*  false*/}
+        {/*) : question.isRight ? (*/}
+        {/*  <Answer type="ok" />*/}
+        {/*) : (*/}
+        {/*  <Answer type="fail" />*/}
+        {/*)}*/}
       </React.Fragment>
     );
   }

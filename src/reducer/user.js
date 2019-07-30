@@ -17,6 +17,8 @@ export default (user = initialState, action) => {
   switch (type) {
     case REGISTER + SUCCESS:
       return Object.assign({}, user, rest, { isLogged: true });
+    // case LOGIN + START:
+    //   return Object.assign({}, user, rest, { isLoading: true });
     case LOGIN + SUCCESS:
       return Object.assign({}, user, rest, { isLogged: true, isLoading: true });
     case GET_USER_INFO + START:

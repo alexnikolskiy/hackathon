@@ -43,7 +43,7 @@ class Home extends Component {
 
     return (
       <React.Fragment>
-        <Welcome />
+        {/*<Welcome />*/}
         <Hero.Head>
           <Header />
         </Hero.Head>
