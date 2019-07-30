@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router basename="/hackathon/">
           <Hero size="fullheight">
             <div className="wallpaper"></div>
 

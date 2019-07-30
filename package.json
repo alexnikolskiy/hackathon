@@ -40,5 +40,6 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "proxy": "http://51.75.68.234"
+  "homepage": "/hackathon",
+  "proxy": "https://nikolskiy.dev:3000"
 }
